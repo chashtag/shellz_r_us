@@ -58,9 +58,9 @@ turtle_tank = {
 
 
 if len(sys.argv) != 3:
-    print "USAGE:: ./shellz.py lhost port"
+    print("USAGE:: ./shellz.py lhost port")
     exit(1)
 
 for turtle in sorted(turtle_tank):
-    print "\033[92m### %s\033[0m" % turtle_tank[turtle]['desc']
-    print "%s \n" % turtle_tank[turtle]['cmd'].format(sys.argv[1],sys.argv[2])
+    print("\033[92m### %s\033[0m" % turtle_tank[turtle]['desc'])
+    print("%s \n" % turtle_tank[turtle]['cmd'].format(sys.argv[1],sys.argv[2]))
